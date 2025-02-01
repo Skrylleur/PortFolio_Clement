@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 const pageTitle = "Clement Papillon";
 ---
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonSpaceGif" src="/space.webp"/>
+    <div class="logo">
+        <img width="300" height="259" alt="Icone Clement" src="/Icone-Clement.png"/>
     </div>
     <h1>Clement Papillon</h1>
     <span class="badge">Technicien du système d'information en alternance</span>
@@ -32,21 +32,11 @@ const pageTitle = "Clement Papillon";
     </p>
     <div class="center">
         <a href="/works/">
-            <button class="btn">Mon portfolio</button>
+            <button class="btn">Mes projets</button>
         </a>
     </div>
     <h2>Compétences</h2>
-<!--<div class="skills center">
-        <img class="skills__img" width="46" height="46" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="DotNetCore" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-        <img class="skills__img" width="46" height="46" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-    </div> -->
+
     <ul>
         <li>Configuration de matériel réseau</li>
         <li>Gestion de projets</li>
@@ -75,3 +65,34 @@ const pageTitle = "Clement Papillon";
 
 </Layout>
 
+<style>
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc inside;
+    }
+
+    ul li {
+    margin-bottom: 13px;
+    }
+
+    h2 {
+    font-size: 1.8rem; /* Taille du titre */
+    font-weight: bold;
+    margin: 40px 0 20px; /* Espacement au-dessus et en dessous */
+    }
+
+  </style>

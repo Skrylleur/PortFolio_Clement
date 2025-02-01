@@ -7,20 +7,42 @@ const pageTitle = "Posts";
 ---
 
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonNotesGif" src="/blog.webp" />
+    <div class="logo">
+        <img width="300" height="259" alt="Icone Clement" src="/Icone-Clement.png"/>
     </div>
-    <h2>Blog</h2>
-    <ul role="list" class="link-card-grid">
-        {
-            allPosts.map((cardPost) => (
-                <Card
-                    url={`/posts/${cardPost.slug}/`}
-                    image={cardPost.data.image.url}
-                    title={cardPost.data.title}
-                    date={cardPost.data.date}
-                />
-            ))
-        }
-    </ul>
-</Layout>
+    <h2>Mes expériences professionnelles</h2>
+    <br>
+    <h3>Stage en développement web | 2018</h3>
+    <p>- Découverte des langages HTML et CSS.</p>
+    <p>- Développement de l'image en ligne de l'entreprise.</p>
+
+    <br>
+    <h3>Equipier polyvalent en restauration rapide | KFC | 2021 - 2023</h3>
+    <p>- Préparer les commandes des clients en respectant les normes d’hygiène et de qualité de KFC.</p>
+    <p>- Assembler les sandwiches, buckets, et autres produits en fonction des standards de l’enseigne.</p>
+    <p>- Veiller à la fraîcheur des ingrédients et au respect des procédures de stockage.</p>
+ 
+    <br>
+    <h3>Technicien informatique | CAF de l'Orne | 2023-2025</h3>
+    <p>- Installer, configurer et dépanner les équipements réseau (switches, routeurs, points d'accès).</p>
+    <p>- Assurer la maintenance préventive et corrective des postes de travail et périphériques.</p>
+    <p>- Fournir une assistance technique aux collaborateurs pour les logiciels, matériels et systèmes d'exploitation (Linux et Microsoft).</p>
+    <p>- Former les collaborateurs à l'utilisation des nouvelles applications et outils bureautiques.</p>
+    <p>- Gérer le parc informatique, suivre les licences et superviser l'inventaire du matériel.</p>
+    <p>- Participer à la mise en œuvre de projets d'infrastructure, tels que le déploiement de nouveaux outils.</p>
+
+<style>
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    p {
+        text-align: justify;
+    }
+  </style>

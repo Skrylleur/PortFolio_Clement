@@ -5,9 +5,10 @@ import Card from '../components/Card.astro';
 const allProjects = await getCollection("projects");
 const pageTitle = "Works";
 ---
+
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
+    <div class="logo">
+        <img width="300" height="259" alt="Icone Clement" src="/Icone-Clement.png"/>
     </div>
     <h2>Projets</h2>
     <ul role="list" class="link-card-grid">
@@ -20,3 +21,15 @@ const pageTitle = "Works";
     </ul>
 </Layout>
 
+<style>
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
